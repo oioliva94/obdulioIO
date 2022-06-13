@@ -66,19 +66,7 @@ public class main {
 		emp2 = null;
 		emp3 = null;
 
-		// esto fue para probar que los objetos se eliminaran correctamente
-		/*
-		 * System.out.println(emp1.getNombre()+"\n");
-		 * System.out.println(emp2.getNombre()+"\n");
-		 * System.out.println(emp3.getNombre()+"\n");
-		 */
-		/*
-		 * System.out.println();
-		 * empresa.mostrarListaEmpleados();
-		 */
-
 		empresa = null;
-		/* empresa.mostrarListaEmpleados(); */
 
 		System.out.println(
 				"Lista de clientes impresa desde objeto tipo Cliente \n despues de eliminar objeto tipo Empresa\n");
