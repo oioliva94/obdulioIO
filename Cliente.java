@@ -6,13 +6,19 @@ public class Cliente {
 	
 //atributos
 private String nombre;
+private int idCliente;
+private String telefonoCliente;
+private String emailCliente;
 private LinkedList<Cliente> listCliente=new LinkedList<Cliente>();
 //contructor por defecto
 public Cliente() {}
 
 //contructor con parametros
-public Cliente (String nombre) {
+public Cliente (String nombre, int idCliente, String telefonoCliente,String emailCliente) {
 	this.nombre=nombre;
+	this.idCliente=idCliente;
+	this.telefonoCliente=telefonoCliente;
+	this.emailCliente=emailCliente;
 }
 
 //get and set
@@ -22,6 +28,30 @@ public void setNombre(String nombre) {
 
 public String getNombre() {
 	return this.nombre;
+}
+
+public void setIdCliente(int idCliente){
+	this.idCliente=idCliente;
+}
+
+public int getIdCliente(){
+	return this.idCliente;
+}
+
+public void setTelefonoCliente(String telefonoCliente){
+	this.telefonoCliente=telefonoCliente;
+}
+
+public String getTelefonoCliente(){
+	return this.telefonoCliente;
+}
+
+public void setEmailCliente(String emailCliente){
+	this.emailCliente=emailCliente;
+}
+
+public String getEmailCliente(){
+	return this.emailCliente;
 }
 
 public LinkedList<Cliente> getListCliente() {
