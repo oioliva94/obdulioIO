@@ -64,11 +64,17 @@ public void setListCliente(LinkedList<Cliente> listCliente) {
 
 //Metodos
 public void agregarCliente(Cliente cliente) {
+	if(buscarPorId(cliente)==false) {
 	this.listCliente.add(cliente);
 	System.out.println("Cliente agregado");
+	}
+	else {
+		System.out.println("El cliente ya existe");
+	}
 }
 
 public void removerCliente(int indice) {
+	
 	this.listCliente.remove(indice);
 	System.out.println("cliente removido");
 }
@@ -81,6 +87,20 @@ public void mostrarListaCliente() {
 	}
 			
 }
+
+//metodo para verificar si un cliente existe en el sistema mediante id
+public boolean buscarPorId(Cliente cliente){
+int tam=this.listCliente.size();
+boolean aux=false;
+	for (int i=0;i<tam;i++){
+		if(this.listCliente.get(i).getIdCliente()==cliente.getIdCliente()){
+			aux=true;
+			break;
+			}
+	}
+	return aux;
+}
+
 
 
 }
