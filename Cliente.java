@@ -83,7 +83,7 @@ public void mostrarListaCliente() {
 	int tam=this.listCliente.size();
 	
 	for(int i=0; i<tam;i++) {
-		System.out.println(this.listCliente.get(i).nombre+"\n");
+		System.out.println(this.listCliente.get(i));
 	}
 			
 }
@@ -100,6 +100,14 @@ boolean aux=false;
 	}
 	return aux;
 }
+
+@Override
+public String toString() {
+	return "| Nombre: " + nombre + "| idCliente: " + idCliente + "| Numero telefonico: " + telefonoCliente
+			+ "| Correo electronico: " + emailCliente ;
+}
+
+
 
 
 

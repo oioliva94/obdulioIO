@@ -5,7 +5,7 @@ public class main {
 	public static void main(String[] args) {
 		
 		// agregando clientes a lista de clientes
-		Cliente cliente1 = new Cliente("Agusto",98564,"77889944","agusto_taco@ejemplo.hn");
+		Cliente cliente1 = new Cliente("Agusto",985644,"77889944","agusto_taco@ejemplo.hn");
 		Cliente cliente2 = new Cliente("Muriel",975678,"33669988","mmuriel@ehem.es");
 		Cliente cliente3 = new Cliente("Tanaka",564824,"95881264","yoshida_tana@ejem.jp");
 		Cliente cliente4=new Cliente("Michael",123456,"88445566","michael55@ejem.hn");
